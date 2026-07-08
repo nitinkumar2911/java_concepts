@@ -1,11 +1,11 @@
-class Person{
-    public String name = "John";
-    private int age = 30;
-}
+
 public class Main {
+    final int x = 10;
+    final double PI = 3.14;
     public static void main(String[] args){
-     Person p = new Person();
-     System.out.println(p.name);
-     System.out.println(p.age);
+     Main myObj = new Main();
+     myObj.x = 50;
+     myObj.PI = 25;
+     System.out.println(myObj.x);
     }
 }
