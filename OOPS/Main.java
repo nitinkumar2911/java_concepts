@@ -1,16 +1,12 @@
 
-public class Main {
-    static int x = 5;
-     static void myStaticMethod() {
-    System.out.println("Static methods can be called without creating objects");
+abstract class Main {
+   public String fname = "John";
+   public int age = 24;
+   public abstract void study();
   }
-    public static void main(String[] args){
-      myStaticMethod(); 
-      System.out.println(x);
-    Main myObj = new Main();
-    System.out.println(myObj.x);
-    System.out.println(Main.x);
-    Main.myStaticMethod();
-     
+class Student extends Main{
+    public int graduationYear = 2018;
+    public void study(){
+        System.out.println("Study all day long");
     }
 }
